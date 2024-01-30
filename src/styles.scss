@@ -2,7 +2,19 @@
 @import "./theme/variables.scss";
 
 * {
-    
+    background-color: var(--primary-bg);
+    color: var(--primary-font);
+    font-size: 1.2rem;
+}
+
+.blinker {
+    animation: blinkingCursor 0.8s infinite;
+}
+  
+@keyframes blinkingCursor {
+0% { opacity: 0; }
+50% { opacity: 1; }
+100% { opacity: 0; }
 }
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
